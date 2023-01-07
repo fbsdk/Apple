@@ -73,6 +73,10 @@
 .play .btn {margin-left: auto; padding-right: 20px;}
 
 
+/* nav */
+.nav { position: fixed; width: 100%; z-index: 9999; bottom: 0; background: #fff;}
+.nav ul { display: flex; text-align: center;}
+
 
 /* 반응형을 위한 mediaquery  */
 @media(max-width:1020px){

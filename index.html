@@ -16,9 +16,15 @@
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
     
-    
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+
 
 </head>
+
 <body>
     <header id="header">
         <div class="container">
@@ -56,27 +62,49 @@
                 <div class="container">
                     <div class="row">
                         <h2>최근 재생한 음악</h2>
-                        <div class="recent">
-                            <picture>
-                                <img src="assets/images/recent_01.png.png" alt="캐릭터">
-                            </picture>
-                            <div class="recent-title">
-                                <span class="rt-stit">네네</span>
-                                <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                        <div class="slide">
+                            <div class="recent">
+                                <picture>
+                                    <img src="assets/images/recent_01.png.png" alt="캐릭터">
+                                </picture>
+                                <div class="recent-title">
+                                    <span class="rt-stit">네네</span>
+                                    <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="recent">
-                            <picture>
-                                <img src="assets/images/recent_02.png.png" alt="캐릭터">
-                            </picture>
-                            <div class="recent-title">
-                                <span class="rt-stit">음반</span>
-                                <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                            <div class="recent">
+                                <picture>
+                                    <img src="assets/images/recent_02.png.png" alt="캐릭터">
+                                </picture>
+                                <div class="recent-title">
+                                    <span class="rt-stit">네네</span>
+                                    <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <picture>
+                                    <img src="assets/images/recent_01.png.png" alt="캐릭터">
+                                </picture>
+                                <div class="recent-title">
+                                    <span class="rt-stit">네네</span>
+                                    <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <picture>
+                                    <img src="assets/images/recent_02.png.png" alt="캐릭터">
+                                </picture>
+                                <div class="recent-title">
+                                    <span class="rt-stit">네네</span>
+                                    <h3 class="rt-tit">오늘의 팝 사운드</h3>
+                                </div>
                             </div>
                         </div>
                     </div> 
-                </div>      
+                </div> 
+                        
+                        
+                            
             </article>
             <!-- //recentM-->
 
@@ -247,6 +275,17 @@
         </ul>
     </nav>
 
+
+    <!-- script -->
+    <script>
+          $('.slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows:false
+          });
+    </script>
 
 </body>
 </html>
